@@ -11,19 +11,19 @@
   --blurple-500: hsl(350deg, 100%, 66%); // Brand Fiery Rose
   --blurple-300: hsl(350deg, 100%, 79%); // Salmon Pink
 
-  --rich-text-text-color: rgba(114, 47, 83, 100%); // Bordeaux Red
+  --bordeaux-red: rgba(114, 47, 83, 100%); // Bordeaux Red
 }
 
-
 // Overwrite
-$classic-base-color: var(--classic-base-color);
-$classic-primary-color: var(--classic-primary-color);
-$classic-secondary-color: var(--classic-secondary-color);
-$classic-highlight-color: var(--classic-highlight-color);
+$classic-base-color: var(--classic-base-color) !default;
+$classic-primary-color: var(--classic-primary-color) !default;
+$classic-secondary-color: var(--classic-secondary-color) !default;
+$classic-highlight-color: var(--classic-highlight-color) !default;
 
-$blurple-600: var(--blurple-600);
-$blurple-500: var(--blurple-500);
-$blurple-300: var(--blurple-300);
+$blurple-600: var(--blurple-600) !default;
+$blurple-500: var(--blurple-500) !default;
+$blurple-300: var(--blurple-300) !default;
+$bordeaux-red: var(--bordeaux-red) !default;
 $grey-600: hsl(240deg, 8%, 33%); // Trout
 $grey-100: hsl(240deg, 51%, 90%); // Topaz
 
@@ -48,6 +48,6 @@ body {
   --background-filter: blur(10px);
   --on-surface-color: #{transparentize($ui-base-color, 0.65)};
   --rich-text-container-color: rgba(255, 216, 231, 100%);
-  --rich-text-text-color: var(--rich-text-text-color);
+  --rich-text-text-color: var($bordeaux-red);
   --rich-text-decorations-color: rgba(255, 175, 212, 100%);
 }
