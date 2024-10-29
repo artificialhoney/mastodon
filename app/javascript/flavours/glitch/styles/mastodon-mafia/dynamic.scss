@@ -29,6 +29,7 @@ $grey-100: hsl(240deg, 51%, 90%); // Topaz
 // Differences
 $success-green: lighten(hsl(138deg, 32%, 35%), 8%);
 
+$ui-base-color: hsl(200deg, 100%, 66%) !default;
 $ui-base-lighter-color: hsl(250deg, 24%, 75%);
 
 $dark-text-color: hsl(240deg, 16%, 32%);
@@ -45,7 +46,7 @@ body {
   --background-color: #fff;
   --background-color-tint: rgba(255, 255, 255, 80%);
   --background-filter: blur(10px);
-  --on-surface-color: #{transparentize($ui-base-color, 0.65)};
+  --on-surface-color: var(#{transparentize($ui-base-color, 0.65)});
   --rich-text-container-color: rgba(255, 216, 231, 100%);
   --rich-text-text-color: var($bordeaux-red);
   --rich-text-decorations-color: rgba(255, 175, 212, 100%);
